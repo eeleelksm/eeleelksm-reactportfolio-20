@@ -9,7 +9,7 @@ function Nav() {
 
 	return (
 		<nav>
-			<ul className="">
+			<ul className="navbar" direction="horizontal">
 				{tabs.map((tab) => (
 					<li className="" key={tab.name}>
 						<span onClick={() => tabSelected(tab.name)}> {tab.name}</span>
