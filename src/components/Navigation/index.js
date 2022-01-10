@@ -3,16 +3,16 @@ import React from "react";
 function Nav() {
 	const tabs = [{ name: "About Me" }, { name: "Portfolio" }, { name: "Resume" }];
 
-	const tabSelected = () => {
-		console.log("hi");
-	};
+	function tabSelected(name) {
+		console.log(`${name} clicked`);
+	}
 
 	return (
 		<nav>
 			<ul className="">
 				{tabs.map((tab) => (
 					<li className="" key={tab.name}>
-						<span onClick={tabSelected}>{tab.name}</span>
+						<span onClick={() => tabSelected(tab.name)}> {tab.name}</span>
 					</li>
 				))}
 				<li>Contact</li>
