@@ -3,7 +3,7 @@
 body {
 	font-family: "Lato", sans-serif;
 	background-color: #f6f7f3;
-	margin: 0 auto;
+	margin: 5px auto;
 }
 
 header {
@@ -52,4 +52,10 @@ li {
 	margin-right: calc(1rem);
 	margin-left: calc(2.5rem);
 	text-transform: uppercase;
+}
+
+.img-thumbnail {
+	width: 300px;
+	border: 1px solid;
+	margin-left: 10px;
 }

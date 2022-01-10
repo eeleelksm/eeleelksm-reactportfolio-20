@@ -1,10 +1,13 @@
 import React from "react";
+import project from "../../assets/images/project-1.png";
 
-function Portfolio() {
+function Portfolio(props) {
 	return (
 		<section>
-			<h1>NAME</h1>
-			{/* image of project */}
+			<h1>Portfolio</h1>
+			<div>
+				<img src={project} alt="project name" className="img-thumbnail" />
+			</div>
 		</section>
 	);
 }
