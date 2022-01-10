@@ -9,13 +9,13 @@ function Nav() {
 
 	return (
 		<nav>
-			<ul className="navbar" direction="horizontal">
+			<ul className="navbar">
 				{tabs.map((tab) => (
-					<li className="" key={tab.name}>
+					<li className="mx-2" key={tab.name}>
 						<span onClick={() => tabSelected(tab.name)}> {tab.name}</span>
 					</li>
 				))}
-				<li>Contact</li>
+				<li className="mx-2">Contact</li>
 			</ul>
 		</nav>
 	);
