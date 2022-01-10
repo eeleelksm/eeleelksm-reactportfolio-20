@@ -1,10 +1,10 @@
 import React from "react";
+import avatarImage from "../../assets/images/avatar-bust.png";
 
 function About() {
 	return (
 		<section>
-			<h1>hello</h1>
-			{/* Image of myself/avatar */}
+			<img src={avatarImage} style={{ width: "65%" }}></img>
 			<p>
 				Keshia-Lee is a Fullstack Web Developer with hopes of transferring her
 				newfound skills into programming and designing video games.
