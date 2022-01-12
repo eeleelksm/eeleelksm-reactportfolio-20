@@ -7,11 +7,23 @@ import project5 from "../../assets/images/project-5.png";
 import project6 from "../../assets/images/project-6.png";
 
 function Project() {
+	const openInNewTab = (url) => {
+		const newWindow = window.open(url, "_blank", "noopener, norefferer");
+		if (newWindow) newWindow.opener = null;
+	};
+
 	return (
 		<section className="project-section">
 			<h1>Projects</h1>
 			<div>
-				<img src={project1} alt="project-name" className="img-thumbnail" />
+				<a href="https://fast-temple-66110.herokuapp.com/">
+					<img
+						src={project1}
+						alt="project-name"
+						className="img-thumbnail"
+						onClick={() => openInNewTab("https://fast-temple-66110.herokuapp.com/")}
+					/>
+				</a>
 				<img src={project2} alt="project-name" className="img-thumbnail" />
 				<img src={project3} alt="project-name" className="img-thumbnail" />
 				<img src={project4} alt="project-name" className="img-thumbnail" />
