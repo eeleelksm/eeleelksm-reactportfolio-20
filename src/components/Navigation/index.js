@@ -1,26 +1,30 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-// passing props through the Nav function
-function Nav(props) {
-	const tabs = ["About Me", "Projects", "Resume", "Contact"];
-	// Setting the default page to Home
-
+function Nav() {
 	return (
 		<nav>
-			<ul className="navbar flex-row">
-				{tabs.map((tab) => (
-					<li className="mx-2" key={tab}>
-						<a
-							href={"#" + tab.toLowerCase()}
-							// when a tab is clicked
-							// the page will set through hanglePageChange props
-							onClick={() => props.handlePageChange(tab)}
-							className={props.currentPage === tab ? "nav-link active" : "nav-link"}
-						>
-							{tab}
-						</a>
-					</li>
-				))}
+			<ul className="flex-row navbar">
+				<li>
+					<NavLink exact to="/" className="mx-2">
+						About Me
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/projects" className="mx-2">
+						Projects
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/resume" className="mx-2">
+						Resume
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/contact" className="mx-2">
+						Contact Me
+					</NavLink>
+				</li>
 			</ul>
 		</nav>
 	);

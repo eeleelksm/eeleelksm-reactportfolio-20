@@ -1,30 +1,30 @@
 import React, { useState } from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
 import About from "./components/Pages/About";
 import Project from "./components/Pages/Project";
-import ContactForm from "./components/Pages/Contact";
+import Contact from "./components/Pages/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Pages/Resume";
 
 function App() {
-	// set the default when the application is opened to About Me
-	const [currentPage, handlePageChange] = useState("About Me");
-
-	// switch statement to render the page selected
-	const renderPage = () => {
-		switch (currentPage) {
-			case "Project":
-				return <Project />;
-			case "Contact":
-				return <ContactForm />;
-			default:
-				return <About />;
-		}
-	};
-
 	return (
 		<>
-			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
-			<div>{renderPage(currentPage)}</div>
+			<div>
+				<HashRouter>
+					<Header />
+					<div className="content">
+						<Routes>
+							<Route exact path="/" component={About} />
+							<Route exact path="/projects" component={Project} />
+							<Route exact path="/resume" component={Resume} />
+							<Route exact path="/contact" component={Contact} />
+						</Routes>
+					</div>
+				</HashRouter>
+			</div>
+			<About />
 			<Footer />
 		</>
 	);
