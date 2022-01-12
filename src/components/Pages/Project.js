@@ -12,6 +12,4 @@ function Project() {
 	);
 }
 
-function Resume() {}
-
 export default Project;
