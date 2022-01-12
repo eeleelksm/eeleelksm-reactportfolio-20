@@ -4,7 +4,7 @@ import avatarImage from "../../assets/images/avatar-bust.png";
 function About() {
 	return (
 		<section>
-			<img src={avatarImage} style={{ width: "65%" }}></img>
+			<img className="avatar" src={avatarImage} style={{ width: "65%" }}></img>
 			<p>
 				Keshia-Lee is a Fullstack Web Developer with hopes of transferring her
 				newfound skills into programming and designing video games.
