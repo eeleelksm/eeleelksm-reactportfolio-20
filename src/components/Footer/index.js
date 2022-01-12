@@ -1,7 +1,7 @@
 function Footer() {
 	return (
 		<footer className="footer">
-			<p>sticky footer</p>
+			<p> © 2022 </p>
 		</footer>
 	);
 }
