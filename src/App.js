@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import About from "./components/Pages/About";
-import Project from "./components/Pages/Project";
-import Contact from "./components/Pages/Contact";
-import Footer from "./components/Footer";
-import Resume from "./components/Pages/Resume";
+import Header from "./components/Header/Header";
+import About from "./components/Pages/About/About";
+import Project from "./components/Pages/Project/Project";
+import Contact from "./components/Pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Resume from "./components/Pages/Resume/Resume";
 
 function App() {
 	return (
