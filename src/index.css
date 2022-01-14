@@ -26,11 +26,6 @@ header {
 	font-family: "Fira Sans", sans-serif;
 }
 
-.about-box {
-	margin: 20px;
-	margin-top: 50px;
-}
-
 h1 {
 	text-align: center;
 }
@@ -47,10 +42,15 @@ h3 {
 
 nav {
 	font-size: 20px;
+	padding: 10px;
 }
 
 nav a:hover {
 	font-weight: 700;
+	color: #f6f7f3;
+	background-color: #7a3b69;
+	padding: 10px;
+	transition: all 0.3s ease;
 }
 
 header a {
@@ -58,6 +58,7 @@ header a {
 	color: #211a1d;
 }
 
+/* within the nav bar */
 li {
 	list-style: none;
 }
@@ -69,6 +70,7 @@ li {
 	cursor: pointer;
 }
 
+/* projects tab */
 .img-thumbnail {
 	width: 310px;
 	height: 225px;
@@ -80,7 +82,11 @@ li {
 	background-color: #0e79b2;
 	opacity: 0.5;
 }
+.project-section {
+	text-align: center;
+}
 
+/* about me tab */
 .about-me {
 	text-align: justify;
 	display: flex;
@@ -94,10 +100,12 @@ li {
 	margin: 30px;
 }
 
-.project-section {
-	text-align: center;
+.about-box {
+	margin: 20px;
+	margin-top: 50px;
 }
 
+/* footer */
 .footer {
 	background-color: #f6f7f3;
 	position: fixed;
