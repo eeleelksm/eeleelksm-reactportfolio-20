@@ -2,10 +2,12 @@ import avatarImage from "../../../assets/images/avatar-bust.png";
 
 function About() {
 	return (
-		<section className="about-box">
-			<h1>About Me</h1>
-			<div className="about-me" id="/">
-				<img className="avatar" src={avatarImage} style={{ width: "40%" }}></img>
+		<section>
+			<h1 className="page-title">about me</h1>
+			<div className="about-box">
+				<div className="avatar">
+					<img src={avatarImage} style={{ width: "30%" }}></img>
+				</div>
 				<div className="about-text">
 					<p>
 						Keshia-Lee is a Fullstack Web Developer with hopes of transferring her

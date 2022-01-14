@@ -58,6 +58,12 @@ header a {
 	color: #211a1d;
 }
 
+.page-title {
+	font-size: 30px;
+	font-family: "Fira Sans", sans-serif;
+	margin-top: 50px;
+}
+
 /* within the nav bar */
 li {
 	list-style: none;
@@ -87,22 +93,19 @@ li {
 }
 
 /* about me tab */
-.about-me {
-	text-align: justify;
-	display: flex;
-}
-
-.about-text {
-	display: flex;
-	flex-flow: column wrap;
-	width: 50%;
-	padding-right: 15px;
-	margin: 30px;
-}
 
 .about-box {
 	margin: 20px;
-	margin-top: 50px;
+}
+
+.about-text {
+	width: 50%;
+	text-align: justify;
+	margin-left: 25%;
+}
+
+.avatar {
+	text-align: center;
 }
 
 /* footer */
