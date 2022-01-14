@@ -6,10 +6,10 @@ function Header() {
 		<header>
 			<section>
 				<a href="/" className="header-title">
-					Keshia-Lee Martin
+					keshia-lee martin
 				</a>
 				<h3 className="header-desc">
-					Fullstack Web Developer || Future Game Programmer
+					fullstack web developer & future game programmer
 				</h3>
 			</section>
 			<section className="nav-right">
