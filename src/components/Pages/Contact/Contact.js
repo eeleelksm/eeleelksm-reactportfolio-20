@@ -20,6 +20,7 @@ function ContactForm() {
 	return (
 		<section>
 			<h1>Contact Me</h1>
+			<div className="icons"></div>
 			<form id="contact-form" onSubmit={handleSubmit}>
 				<div>
 					<label htmlFor="name">Name:</label>

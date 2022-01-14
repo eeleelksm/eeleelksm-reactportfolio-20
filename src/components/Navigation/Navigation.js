@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Nav() {
 	return (
 		<nav>
-			<ul className="flex-row navbar">
+			<ul className="navbar">
 				<li>
 					<NavLink exact to="/" className="mx-2">
 						About Me

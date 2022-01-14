@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "../Navigation";
+import Nav from "../Navigation/Navigation";
 
 function Header() {
 	return (
@@ -12,7 +12,7 @@ function Header() {
 					Fullstack Web Developer || Future Game Programmer
 				</h3>
 			</section>
-			<section>
+			<section className="nav-right">
 				<Nav />
 			</section>
 		</header>
