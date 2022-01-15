@@ -46,11 +46,12 @@ nav {
 }
 
 nav a:hover {
-	font-weight: 700;
+	font-weight: 500;
 	color: #f6f7f3;
-	background-color: #7a3b69;
+	background-color: #a97c73;
 	padding: 10px;
 	transition: all 0.3s ease;
+	border-radius: 10px;
 }
 
 header a {
@@ -81,12 +82,14 @@ li {
 	width: 310px;
 	height: 225px;
 	border: 1px solid;
+	border-radius: 10px;
 	margin-left: 10px;
 }
 
 .img-thumbnail:hover {
 	background-color: #0e79b2;
-	opacity: 0.5;
+	opacity: 0.35;
+	cursor: pointer;
 }
 .project-section {
 	text-align: center;
@@ -102,6 +105,7 @@ li {
 	width: 50%;
 	text-align: justify;
 	margin-left: 25%;
+	font-size: 18px;
 }
 
 .avatar {

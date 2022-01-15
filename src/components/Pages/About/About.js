@@ -10,13 +10,13 @@ function About() {
 				</div>
 				<div className="about-text">
 					<p>
-						Keshia-Lee is a Fullstack Web Developer with hopes of transferring her
-						newfound skills into programming and designing video games.
+						I'm a Fullstack Web Developer with hopes of transferring my newfound
+						skills into programming and designing video games.
 					</p>
 					<p>
-						She grabs her inspiration from sci-fi and fantasy books. Some of her
-						favorite games are Skyrim, Horizon Zero Dawn. Kingdom Hearts franchise and
-						The Sims franchise.
+						I grab my inspiration from sci-fi and fantasy books. Some of my favorite
+						games are Skyrim, Horizon Zero Dawn, The Kingdom Hearts franchise and The
+						Sims franchise.
 					</p>
 				</div>
 			</div>
