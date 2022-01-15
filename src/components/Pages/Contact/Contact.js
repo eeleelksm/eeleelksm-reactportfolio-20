@@ -19,7 +19,7 @@ function ContactForm() {
 
 	return (
 		<section>
-			<h1>Contact Me</h1>
+			<h1 className="page-title">contact me</h1>
 			<div className="icons"></div>
 			<form id="contact-form" onSubmit={handleSubmit}>
 				<div>

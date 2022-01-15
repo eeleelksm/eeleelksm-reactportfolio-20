@@ -62,7 +62,9 @@ header a {
 .page-title {
 	font-size: 30px;
 	font-family: "Fira Sans", sans-serif;
-	margin-top: 50px;
+	margin-top: 20px;
+	color: #386c94;
+	text-decoration: underline;
 }
 
 /* within the nav bar */
@@ -127,7 +129,8 @@ h3 {
 .img-thumbnail {
 	width: 275px;
 	height: 200px;
-	border: 1px solid;
+	border: 2px solid;
+	border-color: lightgray;
 	border-radius: 10px;
 	margin-left: 10px;
 	object-fit: cover;
@@ -137,7 +140,26 @@ h3 {
 .img-thumbnail:hover {
 	opacity: 0.2;
 	cursor: pointer;
+	transition: all 0.3s ease;
 	z-index: 0;
+}
+/*  resume tab */
+
+.resume-list {
+	text-align: center;
+	border: 1px solid lightgray;
+}
+
+.resume-title {
+	font-size: 22px;
+	color: #7a3b69;
+}
+
+.job-name,
+.school-title {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #98675d;
 }
 
 /* footer */
