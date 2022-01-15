@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { validateEmail } from "../../../utils/helpers";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
@@ -9,14 +10,35 @@ function ContactForm() {
 		message: "",
 	});
 	const { name, email, message } = formState;
-
-	function handleChange(e) {
-		setFormState({ ...formState, [e.target.name]: e.target.value });
-	}
+	const [errorMessage, setErrorMessage] = useState("");
 
 	function handleSubmit(e) {
 		e.preventDefault();
 		console.log(formState);
+	}
+
+	function handleChange(e) {
+		if (e.target.name === "email") {
+			const isValid = validateEmail(e.target.value);
+			console.log(isValid);
+			// isValid conditional statement
+			if (!isValid) {
+				setErrorMessage("Your email is invalid");
+			} else {
+				setErrorMessage("");
+			}
+		} else {
+			if (!e.target.value.length) {
+				setErrorMessage(`A ${e.target.name} is required.`);
+			} else {
+				setErrorMessage("");
+			}
+			if (!errorMessage) {
+				setFormState({ ...formState, [e.target.name]: e.target.value });
+			}
+
+			console.log("errorMessage", errorMessage);
+		}
 	}
 
 	return (
@@ -74,6 +96,11 @@ function ContactForm() {
 							rows="3"
 						/>
 					</div>
+					{errorMessage && (
+						<div>
+							<p className="error-text">{errorMessage}</p>
+						</div>
+					)}
 					<button type="submit">Submit</button>
 				</form>
 			</div>
