@@ -24,6 +24,7 @@ header {
 .header-title {
 	font-weight: 700;
 	font-family: "Fira Sans", sans-serif;
+	white-space: nowrap;
 }
 
 h1 {
@@ -38,6 +39,7 @@ h3 {
 .navbar {
 	display: flex;
 	margin: 25px 30px 30px 0px;
+	white-space: nowrap;
 }
 
 nav {
@@ -237,4 +239,39 @@ button:hover {
 .icon {
 	margin: 5px;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+	header {
+		justify-content: center;
+		padding: 15px;
+		flex-wrap: wrap;
+	}
+
+	.navbar {
+		justify-content: center;
+		margin-top: 40px;
+		white-space: nowrap;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.navbar {
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 20px;
+		white-space: nowrap;
+	}
+
+	nav {
+		font-size: 18px;
+	}
+
+	nav a:hover {
+		font-weight: 300;
+		color: #f6f7f3;
+		padding: 3px;
+		transition: all 0.3s ease;
+		border-radius: 10px;
+	}
 }
