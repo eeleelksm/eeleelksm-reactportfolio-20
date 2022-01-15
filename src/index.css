@@ -37,11 +37,11 @@ h3 {
 
 .navbar {
 	display: flex;
-	margin: 25px 30px 20px 0px;
+	margin: 25px 30px 30px 0px;
 }
 
 nav {
-	font-size: 20px;
+	font-size: 18px;
 	padding: 10px;
 }
 
@@ -160,6 +160,61 @@ h3 {
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #98675d;
+}
+
+/* contact me tab */
+.contact-icons {
+	display: flex;
+	justify-content: center;
+	padding-right: 10px;
+}
+
+.contact-link {
+	text-decoration: none;
+}
+
+.icon2 {
+	margin-right: 5px;
+}
+
+.contact-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-label {
+	margin-top: 10px;
+}
+
+textarea {
+	width: 250px;
+	height: 100px;
+	padding: 5px;
+	font-size: 14px;
+}
+
+input {
+	width: 250px;
+	padding: 5px;
+	font-size: 14px;
+}
+
+button {
+	background-color: #98675d;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #31081f;
+	transition: 0.3s ease;
 }
 
 /* footer */
