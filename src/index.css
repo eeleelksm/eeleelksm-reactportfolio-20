@@ -77,24 +77,6 @@ li {
 	cursor: pointer;
 }
 
-/* projects tab */
-.img-thumbnail {
-	width: 310px;
-	height: 225px;
-	border: 1px solid;
-	border-radius: 10px;
-	margin-left: 10px;
-}
-
-.img-thumbnail:hover {
-	background-color: #0e79b2;
-	opacity: 0.35;
-	cursor: pointer;
-}
-.project-section {
-	text-align: center;
-}
-
 /* about me tab */
 
 .about-box {
@@ -110,6 +92,52 @@ li {
 
 .avatar {
 	text-align: center;
+}
+
+/* projects tab */
+.project-section {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.item {
+	width: 200px;
+	height: 150px;
+	margin: 30px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	position: relative;
+}
+
+h3 {
+	position: absolute;
+	font-size: 25px;
+	color: #386c94;
+}
+
+.img-thumbnail {
+	width: 275px;
+	height: 200px;
+	border: 1px solid;
+	border-radius: 10px;
+	margin-left: 10px;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.img-thumbnail:hover {
+	opacity: 0.2;
+	cursor: pointer;
+	z-index: 0;
 }
 
 /* footer */

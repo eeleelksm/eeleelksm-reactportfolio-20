@@ -3,28 +3,37 @@ import React from "react";
 function Resume() {
 	return (
 		<section>
-			<h1>Resume</h1>
+			<h1 className="page-title">resume</h1>
 			<div className="resume">
 				<div className="resume-list">
 					<div className="experience">
 						<h2 className="resume-title">Experience</h2>
 						<p>
-							<b className="job-title">TapSEC Consulting, LLC</b> :: Marketing
-							Assistant
+							<b className="job-title">
+								<span className="job-name">TapSEC Consulting, LLC</span>
+							</b>{" "}
+							:: Marketing Assistant
 							<br />
 							<i>FEBRUARY 2019 - PRESENT</i>
 							<br /> <br />
-							<b className="job-title">US Tech Solutions (Google Contract)</b> :: Lead
-							QA Operations Analyst
+							<b className="job-title">
+								<span className="job-name">US Tech Solutions (Google Contract)</span>
+							</b>{" "}
+							:: Lead QA Operations Analyst
 							<br />
 							<i>JANUARY 2020 - JULY 2021</i>
 							<br /> <br />
-							<b className="job-title">Crowdstaffing (Google Contract) </b> :: QA Data
-							Analyst
+							<b className="job-title">
+								<span className="job-name">Crowdstaffing (Google Contract) </span>
+							</b>{" "}
+							:: QA Data Analyst
 							<br />
 							<i>AUGUST 2018 - NOVEMBER 2018</i>
 							<br /> <br />
-							<b className="job-title">Elite Personnel</b> :: Quality Control Assistant
+							<b className="job-title">
+								<span className="job-name">Elite Personnel</span>
+							</b>{" "}
+							:: Quality Control Assistant
 							<br />
 							<i>MAY 2017 - AUGUST 2018</i>
 							<br /> <br />
@@ -55,7 +64,6 @@ function Resume() {
 					<div className="playtesting">
 						<h2 className="resume-title">Play Testing</h2>
 						<p>
-							<b className="play-title">AOV: Arena of Valor</b> :: Multiplayer Open
 							Battle Arena (MOBA) Mobile Game
 							<br />
 							<i>DECEMBER 2021</i>
