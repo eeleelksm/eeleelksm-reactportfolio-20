@@ -5,7 +5,7 @@ function Header() {
 	return (
 		<header>
 			<section>
-				<a href="#about" className="header-title">
+				<a href="/" className="header-title">
 					keshia-lee martin
 				</a>
 				<h3 className="header-desc">
