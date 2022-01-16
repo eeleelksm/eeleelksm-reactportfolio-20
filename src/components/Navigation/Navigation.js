@@ -1,29 +1,20 @@
-import { NavLink } from "react-router-dom";
+function Nav(props) {
+	const tabs = ["About", "Projects", "Resume", "Contact"];
 
-function Nav() {
 	return (
 		<nav>
 			<ul className="navbar">
-				<li>
-					<NavLink to="/" className="mx-2">
-						About Me
-					</NavLink>
-				</li>
-				<li>
-					<NavLink to="projects" className="mx-2">
-						Projects
-					</NavLink>
-				</li>
-				<li>
-					<NavLink to="resume" className="mx-2">
-						Resume
-					</NavLink>
-				</li>
-				<li>
-					<NavLink to="contact" className="mx-2">
-						Contact Me
-					</NavLink>
-				</li>
+				{tabs.map((tab) => (
+					<li className="mx-2" key={tab}>
+						<a
+							href={"#" + tab.toLowerCase()}
+							onClick={() => props.handlePageChange(tab)}
+							className={props.currentPage === tab ? "nav-link active" : "nav-link"}
+						>
+							{tab}
+						</a>
+					</li>
+				))}
 			</ul>
 		</nav>
 	);

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import avatarImage from "../../../assets/images/avatar-bust.png";
 
 function About() {

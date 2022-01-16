@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import About from "./components/Pages/About/About";
@@ -9,25 +8,27 @@ import Footer from "./components/Footer/Footer";
 import Resume from "./components/Pages/Resume/Resume";
 
 function App() {
+	const [currentPage, handlePageChange] = useState("About");
+
+	const renderPage = () => {
+		switch (currentPage) {
+			case "Project":
+				return <Project />;
+			case "Resume":
+				return <Resume />;
+			case "Contact":
+				return <Contact />;
+			default:
+				return <About />;
+		}
+	};
+
 	return (
-		<>
-			<div>
-				<BrowserRouter>
-					<Header />
-					<div className="content">
-						<Routes>
-							<Route exact path="/" element={<About />} />
-							<Route exact path="/projects" element={<Project />} />
-							<Route exact path="/resume" element={<Resume />} />
-							<Route exact path="/contact" element={<Contact />} />
-						</Routes>
-					</div>
-				</BrowserRouter>
-			</div>
-			<div>
-				<Footer />
-			</div>
-		</>
+		<div>
+			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
+			<div>{renderPage(currentPage)}</div>
+			<Footer />
+		</div>
 	);
 }
 
