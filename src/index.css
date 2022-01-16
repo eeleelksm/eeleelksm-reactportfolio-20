@@ -4,16 +4,22 @@ body {
 	font-family: "Roboto", sans-serif;
 	background-color: #e3e0de;
 	margin: 0 auto;
+	height: 100%;
+}
+
+html {
+	height: 100%;
 }
 
 header {
+	width: 100%;
 	font-size: 45px;
 	background-color: #f6f7f3;
 	color: #31081f;
 	display: flex;
 	padding-left: 20px;
-	padding-top: 10px;
 	justify-content: space-between;
+	top: 0;
 }
 
 .header-desc {
@@ -241,6 +247,7 @@ button:hover {
 	cursor: pointer;
 }
 
+/* media  */
 @media screen and (max-width: 850px) {
 	header {
 		justify-content: center;
