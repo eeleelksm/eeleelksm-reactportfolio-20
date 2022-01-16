@@ -14,6 +14,7 @@ function App() {
 			<div>
 				<BrowserRouter>
 					<Header />
+					<About />
 					<div className="content">
 						<Routes>
 							<Route exact path="/" element={<About />} />
