@@ -12,7 +12,7 @@ function Project() {
 	};
 
 	return (
-		<section>
+		<section id="projects">
 			<h1 className="page-title">projects</h1>
 			<div className="project-section">
 				<div className="container">

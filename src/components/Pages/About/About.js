@@ -2,7 +2,7 @@ import avatarImage from "../../../assets/images/avatar-bust.png";
 
 function About() {
 	return (
-		<section>
+		<section id="about-me">
 			<h1 className="page-title">about me</h1>
 			<div className="about-box">
 				<div className="avatar">

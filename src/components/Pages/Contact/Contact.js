@@ -42,7 +42,7 @@ function ContactForm() {
 	}
 
 	return (
-		<section>
+		<section id="contact">
 			<h1 className="page-title">contact me</h1>
 			<div className="contact-icons">
 				<GitHubIcon className="icon2" />{" "}
