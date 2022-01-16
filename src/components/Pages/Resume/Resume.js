@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../../../assets/documents/resume.pdf";
 
 function Resume() {
 	return (
@@ -6,6 +7,9 @@ function Resume() {
 			<h1 className="page-title">resume</h1>
 			<div className="resume">
 				<div className="resume-list">
+					<a href={resume} target="_blank">
+						downloadable resume
+					</a>
 					<div className="experience">
 						<h2 className="resume-title">experience</h2>
 						<p>
