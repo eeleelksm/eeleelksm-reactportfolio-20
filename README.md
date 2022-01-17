@@ -22,8 +22,7 @@ This React portfolio was created using:
 ## Upcoming Improvements
 Future edits will include:
 
-- updating the Header and Footer to properly stick
-- smoother transitions for the Project tab
+- smoother transitions for sections, specifically Projects
 - add and improve overall animations
 - improved SPA functionality
 
