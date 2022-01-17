@@ -25,4 +25,5 @@ Future edits will include:
 - updating the Header and Footer to properly stick
 - smoother transitions for the Project tab
 - add and improve overall animations
+- improved SPA functionality
 
