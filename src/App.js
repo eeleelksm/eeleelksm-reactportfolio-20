@@ -6,28 +6,42 @@ import Project from "./components/Pages/Project/Project";
 import Contact from "./components/Pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Resume from "./components/Pages/Resume/Resume";
+import Nav from "./components/Navigation/Navigation";
 
 function App() {
-	const [currentPage, handlePageChange] = useState("About");
+	// NEEDS TO BE REWORKED FOR SPA
+	// const [pages] = useState([
+	// 	{ name: "About" },
+	// 	{ name: "Portfolio" },
+	// 	{ name: "Contact" },
+	// 	{ name: "Resume" },
+	// ]);
 
-	const renderPage = () => {
-		switch (currentPage) {
-			case "Project":
-				return <Project />;
-			case "Resume":
-				return <Resume />;
-			case "Contact":
-				return <Contact />;
-			default:
-				return <About />;
-		}
-	};
+	// const [currentPage, setCurrentPage] = useState(pages[0]);
+
+	// const renderPage = () => {
+	// 	switch (currentPage) {
+	// 		case "Project":
+	// 			return <Project />;
+	// 		case "Resume":
+	// 			return <Resume />;
+	// 		case "Contact":
+	// 			return <Contact />;
+	// 		default:
+	// 			return <About />;
+	// 	}
+	// };
 
 	return (
-		<div>
-			<Header currentPage={currentPage} handlePageChange={handlePageChange} />
-			<div>{renderPage(currentPage)}</div>
-			<Footer />
+		<div className="app">
+			<div className="sections">
+				<Header />
+				<About />
+				<Project />
+				<Resume />
+				<Contact />
+				<Footer />
+			</div>
 		</div>
 	);
 }

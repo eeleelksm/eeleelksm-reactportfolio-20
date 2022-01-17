@@ -42,69 +42,71 @@ function ContactForm() {
 	}
 
 	return (
-		<section id="contact">
-			<h1 className="page-title">contact me</h1>
-			<div className="contact-icons">
-				<GitHubIcon className="icon2" />{" "}
-				<a
-					href="https://github.com/eeleelksm"
-					target="_blank"
-					className="contact-link"
-				>
-					eeleelksm
-				</a>
-			</div>
-			<div className="contact-icons">
-				<EmailIcon className="icon2" />{" "}
-				<a
-					href="mailto:keshialeemartin@gmail.com"
-					target="_blank"
-					className="contact-link"
-				>
-					keshialeemartin@gmail.com
-				</a>
-			</div>
-			<div className="contact-me">
-				<form id="contact-form" onSubmit={handleSubmit}>
-					<div className="contact-label">
-						<label htmlFor="name">Name:</label>
-						<br />
-						<input
-							type="text"
-							defaultValue={name}
-							onChange={handleChange}
-							name="name"
-						/>
-					</div>
-					<div className="contact-label">
-						<label htmlFor="email">Email Address:</label>
-						<br />
-						<input
-							type="email"
-							defaultValue={email}
-							onChange={handleChange}
-							name="email"
-						/>
-					</div>
-					<div className="contact-label">
-						<label htmlFor="message">Message:</label>
-						<br />
-						<textarea
-							defaultValue={message}
-							onChange={handleChange}
-							name="message"
-							rows="3"
-						/>
-					</div>
-					{errorMessage && (
-						<div>
-							<p className="error-text">{errorMessage}</p>
+		<div id="contact">
+			<section>
+				<h1 className="page-title">contact me</h1>
+				<div className="contact-icons">
+					<GitHubIcon className="icon2" />{" "}
+					<a
+						href="https://github.com/eeleelksm"
+						target="_blank"
+						className="contact-link"
+					>
+						eeleelksm
+					</a>
+				</div>
+				<div className="contact-icons">
+					<EmailIcon className="icon2" />{" "}
+					<a
+						href="mailto:keshialeemartin@gmail.com"
+						target="_blank"
+						className="contact-link"
+					>
+						keshialeemartin@gmail.com
+					</a>
+				</div>
+				<div className="contact-me">
+					<form id="contact-form" onSubmit={handleSubmit}>
+						<div className="contact-label">
+							<label htmlFor="name">Name:</label>
+							<br />
+							<input
+								type="text"
+								defaultValue={name}
+								onChange={handleChange}
+								name="name"
+							/>
 						</div>
-					)}
-					<button type="submit">Submit</button>
-				</form>
-			</div>
-		</section>
+						<div className="contact-label">
+							<label htmlFor="email">Email Address:</label>
+							<br />
+							<input
+								type="email"
+								defaultValue={email}
+								onChange={handleChange}
+								name="email"
+							/>
+						</div>
+						<div className="contact-label">
+							<label htmlFor="message">Message:</label>
+							<br />
+							<textarea
+								defaultValue={message}
+								onChange={handleChange}
+								name="message"
+								rows="3"
+							/>
+						</div>
+						{errorMessage && (
+							<div>
+								<p className="error-text">{errorMessage}</p>
+							</div>
+						)}
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</section>
+		</div>
 	);
 }
 
