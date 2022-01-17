@@ -5,7 +5,7 @@ function Nav() {
 		<nav>
 			<ul className="navbar">
 				<li>
-					<a href="#about-me" className="mx-2">
+					<a href="#about" className="mx-2">
 						About Me
 					</a>
 				</li>

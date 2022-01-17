@@ -3,7 +3,7 @@ import avatarImage from "../../../assets/images/avatar-bust.png";
 
 function About() {
 	return (
-		<div id="about-me">
+		<div id="about">
 			<section>
 				<h1 className="page-title">about me</h1>
 				<div className="about-box">
