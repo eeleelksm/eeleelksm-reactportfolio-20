@@ -9,6 +9,10 @@ import Resume from "./components/Pages/Resume/Resume";
 import Nav from "./components/Navigation/Navigation";
 
 function App() {
+	// bummped into issues trying to create as SPA
+	// worked with react router, but would not deploy correctly
+	// simplified in order for page to have functionality
+
 	// NEEDS TO BE REWORKED FOR SPA
 	// const [pages] = useState([
 	// 	{ name: "About" },
