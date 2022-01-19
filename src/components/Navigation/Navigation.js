@@ -1,10 +1,6 @@
-import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-function Nav(props) {
-	const tabs = ["About", "Projects", "Resume", "Contact"];
-
-	const { tabs = [], setCurrentPage, currentPage } = props;
-
+function Nav() {
 	return (
 		<nav>
 			<ul className="navbar">
