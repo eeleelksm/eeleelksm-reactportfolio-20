@@ -4,6 +4,7 @@ import project3 from "../../../assets/images/project-3.png";
 import project4 from "../../../assets/images/project-4.png";
 import project5 from "../../../assets/images/project-5.png";
 import project6 from "../../../assets/images/project-6.png";
+import project7 from "../../../assets/images/project-7.png";
 
 function Project() {
 	const openInNewTab = (url) => {
@@ -54,9 +55,7 @@ function Project() {
 								src={project4}
 								alt="tech-blog"
 								className="img-thumbnail"
-								onClick={() =>
-									openInNewTab("https://desolate-reaches-61347.herokuapp.com/")
-								}
+								onClick={() => openInNewTab("https://desolate-reaches-61347.herokuapp.com/")}
 							/>
 							<h3>Tech Blog</h3>
 						</div>
@@ -76,11 +75,19 @@ function Project() {
 								src={project6}
 								alt="pet-adoption"
 								className="img-thumbnail"
-								onClick={() =>
-									openInNewTab("https://guarded-basin-05749.herokuapp.com/ ")
-								}
+								onClick={() => openInNewTab("https://guarded-basin-05749.herokuapp.com/ ")}
 							/>
 							<h3>Pet Adoption</h3>
+						</div>
+
+						<div className="item">
+							<img
+								src={project7}
+								alt="playbox"
+								className="img-thumbnail"
+								onClick={() => openInNewTab("https://damp-headland-76689.herokuapp.com/ ")}
+							/>
+							<h3>Playbox</h3>
 						</div>
 					</div>
 				</div>
