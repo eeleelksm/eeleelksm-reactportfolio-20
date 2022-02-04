@@ -5,24 +5,24 @@ function Nav() {
 		<nav>
 			<ul className="navbar">
 				<li>
-					<NavLink exact to="/" className="mx-2">
+					<a href="#about" className="mx-2">
 						About Me
-					</NavLink>
+					</a>
 				</li>
 				<li>
-					<NavLink to="/projects" className="mx-2">
+					<a href="#projects" className="mx-2">
 						Projects
-					</NavLink>
+					</a>
 				</li>
 				<li>
-					<NavLink to="/resume" className="mx-2">
+					<a href="#resume" className="mx-2">
 						Resume
-					</NavLink>
+					</a>
 				</li>
 				<li>
-					<NavLink to="/contact" className="mx-2">
+					<a href="#contact" className="mx-2">
 						Contact Me
-					</NavLink>
+					</a>
 				</li>
 			</ul>
 		</nav>
